@@ -11,11 +11,24 @@ public class PingPongTest {
 
   @Test
   public void PingPong_countUpToGivenNumber_Array() {
-    PingPong testPingPong = new PingPong();
+    PingPong testPingPongCount = new PingPong();
     ArrayList<Object> expected = new ArrayList<Object>();
     expected.add(1);
     expected.add(2);
-    ArrayList<Object> testReturn = testPingPong.runPingPong(2);
+    ArrayList<Object> testReturn = testPingPongCount.runPingPong(2);
     assertEquals(expected, testReturn);
   }
+
+  @Test
+  public void PingPong_convertModThreeToPing_String() {
+    PingPong testPingPongModPing = new PingPong();
+    ArrayList<Object> expected = new ArrayList<Object>();
+    expected.add(1);
+    expected.add(2);
+    expected.add("PING!");
+    ArrayList<Object> testReturn = testPingPongModPing.runPingPong(3);
+    assertEquals(expected, testReturn);
+  }
+
+
 }
