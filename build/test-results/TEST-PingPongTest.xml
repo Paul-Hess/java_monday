@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PingPongTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-04-18T20:57:07" hostname="epicodus-58.local" time="0.002">
+<testsuite name="PingPongTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-04-18T21:55:01" hostname="epicodus-58.local" time="0.002">
   <properties/>
-  <testcase name="PingPong_convertModThreeToPing_String" classname="PingPongTest" time="0.002"/>
+  <testcase name="PingPong_convertModThreeToPing_String" classname="PingPongTest" time="0.001"/>
+  <testcase name="PingPong_convertModFiveToPong_String" classname="PingPongTest" time="0.001"/>
+  <testcase name="PingPong_convertModsFivesToPingPong_String" classname="PingPongTest" time="0.0"/>
   <testcase name="PingPong_countUpToGivenNumber_Array" classname="PingPongTest" time="0.0"/>
   <system-out><![CDATA[[1, 2, PING!]
+[1, 2, PING!, 4, PONG!]
+[1, 2, PING!, 4, PONG!, PING!, 7, 8, PING!, PONG!, 11, PING!, 13, 14, PING-PONG!]
 [1, 2]
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

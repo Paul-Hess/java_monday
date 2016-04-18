@@ -1,2 +1,4 @@
 [1, 2, PING!]
-[1, 2]
+[1, 2, PING!, 4, PONG!]
+R[1, 2, PING!, 4, PONG!, PING!, 7, 8, PING!, PONG!, 11, PING!, 13, 14, PING-PONG!]
+[1, 2]
