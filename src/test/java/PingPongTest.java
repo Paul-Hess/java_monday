@@ -1,6 +1,7 @@
 import org.junit.*;
 import static org.junit.Assert.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class PingPongTest {
   // @Test
@@ -23,12 +24,11 @@ public class PingPongTest {
   public void PingPong_convertModThreeToPing_String() {
     PingPong testPingPongModPing = new PingPong();
     ArrayList<Object> expected = new ArrayList<Object>();
-    // expected.add(1);
-    // expected.add(2);
-    // expected.add("PING!");
+    expected.add(1);
+    expected.add(2);
+    expected.add("PING!");
     ArrayList<Object> testReturn = testPingPongModPing.runPingPong(3);
-    Object isPing = testReturn.get(2);
-    assertEquals(isPing, "PING!");
+    assertEquals(expected, testReturn);
   }
 
   @Test
@@ -37,24 +37,15 @@ public class PingPongTest {
     ArrayList<Object> expected = new ArrayList<Object>();
     String ping = "PING!";
     String pong = "PONG!";
-    String pingpong = "PING-PONG!";
-    for (Integer index = 1; index <=5; index++) {
-      if (index % 3 == 0) {
-        expected.add(ping);
-      } else if (index % 5 == 0) {
-        expected.add(pong);
-      } else {
-        expected.add(index);
-      }
-    }
+
+
     ArrayList<Object> testReturn5 = testPingPongModPong.runPingPong(5);
-    assertEquals(expected, testReturn5);
+    assertEquals(Arrays.asList(1, 2, ping, 4, pong), testReturn5);
   }
 
   @Test
   public void PingPong_convertModsFivesToPingPong_String() {
     PingPong testPingPongModPong = new PingPong();
-
 
     ArrayList<Object> testReturn15 = testPingPongModPong.runPingPong(15);
 
