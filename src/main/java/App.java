@@ -15,5 +15,13 @@ public class App {
       model.put("template", "templates/ping-pong.vtl");
       return new ModelAndView(model, "templates/layout.vtl");
     }, new VelocityTemplateEngine());
+
+    get("print-pong", (request, response) -> {
+      Map<String, Object> model = new HashMap<String, Object>();
+      model.put("template", "templates/print-pong");
+
+      
+    })
+
   }
 }
