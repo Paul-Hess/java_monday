@@ -12,9 +12,10 @@ public class PingPongTest {
   @Test
   public void PingPong_countUpToGivenNumber_Array() {
     PingPong testPingPong = new PingPong();
-    ArrayList<Integer> expected = new ArrayList<Integer>();
+    ArrayList<Object> expected = new ArrayList<Object>();
     expected.add(1);
-    ArrayList<Integer> testReturn = testPingPong.runPingPong(1);
+    expected.add(2);
+    ArrayList<Object> testReturn = testPingPong.runPingPong(2);
     assertEquals(expected, testReturn);
   }
 }
