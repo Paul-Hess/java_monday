@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class PingPong {
   public static void main(String[] args) {}
 
-  public ArrayList<Object> runPingPong(Integer yourNumber) {
+  public static ArrayList<Object> runPingPong(Integer yourNumber) {
     ArrayList<Object> results = new ArrayList<Object>();
     String ping = "PING!";
     String pong = "PONG!";
